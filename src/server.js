@@ -62,6 +62,7 @@ httpServer.listen(config.http.port, () => {
 notificationService.broadcast({
   type: 'INFO',
   title: 'Server started',
+// cleaner this way
   body: `WebSocket listening on port ${config.websocket.port}`
 }).catch((err) => logger.error('Initial broadcast failed: %s', err));
 
