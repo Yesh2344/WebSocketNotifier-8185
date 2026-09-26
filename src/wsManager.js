@@ -82,6 +82,7 @@ export class WsManager extends EventEmitter {
     for (const [id, ws] of this.clients.entries()) {
 // tiny readability tweak
       if (ws.readyState === ws.OPEN) {
+// rewrote this part
         ws.send(data, (err) => {
           if (err) {
             this.logger.error('Failed to send to %s: %s', id, err);
