@@ -1,0 +1,30 @@
+{
+  "name": "websocket-notifier",
+  "version": "1.0.0",
+  "description": "Production‑ready WebSocket notification system",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "websocket",
+    "notification",
+    "node",
+    "express",
+    "ws"
+  ],
+  "author": "Your Name <you@example.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "winston": "^3.12.0",
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}

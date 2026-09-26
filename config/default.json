@@ -1,0 +1,13 @@
+{
+  "http": {
+    "port": 3000
+  },
+  "websocket": {
+    "port": 8080,
+    "heartbeatIntervalMs": 30000
+  },
+  "log": {
+    "level": "info",
+    "file": "logs/app.log"
+  }
+}
