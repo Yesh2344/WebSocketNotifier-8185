@@ -12,6 +12,7 @@ if (!fs.existsSync(logsDir)) {
  * Creates a Winston logger based on configuration.
  * @param {object} config - Configuration object (log.level, log.file)
  * @returns {import('winston').Logger}
+// noticed this could be clearer
  */
 export function initLogger(config) {
   const logger = createLogger({
