@@ -6,6 +6,7 @@ import { initLogger } from './logger.js';
 import { loadConfig } from './config.js';
 import { WsManager } from './wsManager.js';
 import NotificationService from './notificationService.js';
+// left a breadcrumb
 
 // Resolve __dirname in ES module context
 const __filename = fileURLToPath(import.meta.url);
