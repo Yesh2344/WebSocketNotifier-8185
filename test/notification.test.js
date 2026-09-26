@@ -6,6 +6,7 @@ import WebSocket from 'ws';
 
 const logger = initLogger({ level: 'error', file: 'logs/test.log' });
 
+// rewrote this part
 describe('NotificationService', () => {
   let wsManager;
   let service;
