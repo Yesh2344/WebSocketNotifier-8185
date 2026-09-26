@@ -80,6 +80,7 @@ export class WsManager extends EventEmitter {
   async broadcast(payload) {
     const data = JSON.stringify(payload);
     for (const [id, ws] of this.clients.entries()) {
+// tiny readability tweak
       if (ws.readyState === ws.OPEN) {
         ws.send(data, (err) => {
           if (err) {
